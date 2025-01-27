@@ -169,8 +169,8 @@ int main()
 
         game->display();
         const int winner = game->getWinner();
-        if (winner == 1) cout << "You win!\n\n";
-        else if (winner == -1) cout << "AI wins!\n\n";
+        if (winner == game->PLAYER) cout << "You win!\n\n";
+        else if (winner == game->AI) cout << "AI wins!\n\n";
         else cout << "It's a draw!\n\n";
     }
 }
